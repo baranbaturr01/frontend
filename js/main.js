@@ -20,7 +20,7 @@ async function generateImageRequest(prompt, size) {
     try {
         showSpinner();
 
-        const response = await fetch('/openai/generate-image', {
+        const response = await fetch('https://generate-image-using-opanai.vercel.app/openai/generate-image', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
